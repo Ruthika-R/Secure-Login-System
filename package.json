@@ -1,0 +1,16 @@
+{
+  "name": "secure-login-system",
+  "version": "1.0.0",
+  "description": "A secure login system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.10.2"
+  }
+}
