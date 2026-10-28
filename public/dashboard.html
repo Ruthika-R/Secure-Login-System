@@ -1,1 +1,29 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Login successful.</p>
+        <h2>Secure Login System</h2>
+        <p>You have successfully logged into your account.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
 
+    <script>
+        async function logout() {
+            const response = await fetch("/logout");
+            if (response.ok) {
+                window.location.href = "/";
+            }
+        }
+    </script>
+</body>
+</html>
+```
